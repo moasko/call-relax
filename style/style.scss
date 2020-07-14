@@ -1,7 +1,7 @@
 :root {
-    --header-color: #3AAFD4, #FFFFFF;
-    --or: #FF9CA3;
-    --text_or: #FF9C43;
+    --header-color: #3aafd4, #ffffff;
+    --or: #ff9ca3;
+    --text_or: #ff9c43;
 }
 
 * {
@@ -17,7 +17,7 @@ body {
 
 body {
     scroll-behavior: smooth;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
 }
 
@@ -26,7 +26,7 @@ a:hover {
 }
 
 header {
-    background-image: linear-gradient(#3AAFD4, #FFFFFF);
+    background-image: linear-gradient(#3aafd4, #ffffff);
 }
 
 .navigbar {
@@ -41,7 +41,7 @@ header {
 .box {
     min-height: 90%;
     border-radius: 3px;
-    background-color: #F7F1E8;
+    background-color: #f7f1e8;
 }
 
 .checks {
@@ -50,7 +50,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    color: #FF9C43;
+    color: #ff9c43;
     font-size: 24px;
 }
 
@@ -63,7 +63,7 @@ header {
 }
 
 .show {
-    animation: sw .8s cubic-bezier(0.76, -0.35, 0, 1.41);
+    animation: sw 0.8s cubic-bezier(0.76, -0.35, 0, 1.41);
 }
 
 @keyframes sw {
@@ -78,17 +78,17 @@ header {
 }
 
 .appel-btn {
-    transition: .3s;
+    transition: 0.3s;
     min-width: 305px;
     margin-top: 10px;
     font-size: 20px;
     padding: 5px 35px;
-    color: #FF9C43;
-    border: 3px solid #FF9C43;
+    color: #ff9c43;
+    border: 3px solid #ff9c43;
     border-radius: 60px;
     &:hover {
-        transition: .3s;
-        background-color: #FF9C43;
+        transition: 0.3s;
+        background-color: #ff9c43;
         color: #fff;
     }
 }
@@ -100,7 +100,7 @@ header {
 
 .card-title {
     font-size: 30px;
-    color: #FF9C43;
+    color: #ff9c43;
 }
 
 .services {
@@ -124,7 +124,7 @@ header {
 
 .tabs-btn {
     padding: 0px 30px;
-    color: #FF9C43;
+    color: #ff9c43;
     text-align: center;
 }
 
@@ -133,7 +133,7 @@ header {
 }
 
 .tabs-btn a {
-    color: #FF9C43;
+    color: #ff9c43;
 }
 
 .tabs {
@@ -155,11 +155,11 @@ header {
 .form-control {
     outline: none;
     font-size: 20px;
-    border: 1px solid #FF9C43;
+    border: 1px solid #ff9c43;
 }
 
 .form-control::placeholder {
-    color: #C29373;
+    color: #c29373;
 }
 
 .navigation>ul {
@@ -172,7 +172,7 @@ header {
 .navigation>ul>li {
     border: 3px solid transparent;
     border-radius: 60px;
-    transition: .3s;
+    transition: 0.3s;
     padding: 13px 10px;
     display: inline;
 }
@@ -187,7 +187,7 @@ header {
 
 .navigation>ul>li:hover {
     border: 3px solid #fff;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .navigation>ul>li>a {
@@ -198,7 +198,7 @@ header {
 section {}
 
 .color-light {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .color-or {
@@ -216,11 +216,11 @@ section {}
 
 .size-80 {
     font-weight: bolder;
-    font-size: 80px;
+    font-size: 90px;
 }
 
 .des {
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 5px;
 }
 
@@ -228,7 +228,78 @@ section {}
     display: none;
 }
 
+.slogent {
+    text-align: center;
+    font-size: 23px;
+    color: #383838;
+}
+
+.env {
+    border: 2px solid transparent;
+    transition: 0.2s;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    background: #ff9c43;
+    padding: 10px 30px;
+    min-width: 250px;
+    border-radius: 50px;
+    &:hover {
+        transition: 0.2s;
+        border: 2px solid #ff9c43;
+        color: #ff9c43;
+        background-color: #fff;
+    }
+}
+
+.links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 25px;
+    color: #ff9c43;
+    font-size: 18px;
+    display: flex;
+}
+
+.links .infos a {
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #b26d2f;
+}
+
+.social-group {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    a {
+        font-size: 35px;
+        color: #ff9c43;
+        margin: 10px;
+    }
+}
+
+footer {
+    padding: 10px;
+    background: #399cf3;
+}
+
 @media (max-width: 800px) {
+    .rel-t {
+        text-align: center;
+        font-size: 60px;
+    }
+    .lo {
+        width: 70%;
+        margin: auto;
+    }
+    .des {
+        letter-spacing: normal;
+    }
+    .h1 {
+        font-size: 25px !important;
+    }
+    .size80 {
+        font-size: 32px;
+    }
     .puce {
         display: block;
     }
@@ -289,14 +360,14 @@ section {}
         padding: 20px;
     }
     .navigation {
-        transition: .5s cubic-bezier(0.72, -0.03, 0.28, 1);
+        transition: 0.5s cubic-bezier(0.72, -0.03, 0.28, 1);
         transform: translateX(100%);
         right: 0;
         width: 60%;
         z-index: 47885;
         height: 100vh;
         bottom: 0;
-        background: #FF9C43;
+        background: #ff9c43;
         position: fixed;
     }
     .shadowb {
@@ -316,7 +387,45 @@ section {}
         width: 100%;
     }
     .vue {
-        transition: .5s;
+        transition: 0.5s;
         transform: translateX(0%) !important;
+    }
+}
+
+.footer {
+    background: #399cf3;
+    color: white;
+    .links {
+        ul {
+            list-style-type: none;
+        }
+        li a {
+            color: white;
+            transition: color 0.2s;
+            &:hover {
+                text-decoration: none;
+                color: #4180cb;
+            }
+        }
+    }
+    .about-company {
+        i {
+            font-size: 25px;
+        }
+        a {
+            color: white;
+            transition: color 0.2s;
+            &:hover {
+                color: #4180cb;
+            }
+        }
+    }
+    .location {
+        i {
+            font-size: 18px;
+        }
+    }
+    .copyright p {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 }
