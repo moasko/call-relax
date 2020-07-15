@@ -123,9 +123,35 @@ header {
 }
 
 .tabs-btn {
+    position: relative;
     padding: 0px 30px;
     color: #ff9c43;
     text-align: center;
+}
+
+a.active.show {
+    animation: none;
+}
+
+.tabs-btn .active::after {
+    content: "";
+    animation: sil 0.2s linear;
+    width: 100%;
+    height: 6px;
+    padding: 0px 30px;
+    background-color: #ff9c43;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+
+@keyframes sil {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
 }
 
 .tabs-btn img {
@@ -141,6 +167,7 @@ header {
 }
 
 .nav-tabs {
+    align-items: center;
     width: 100%;
 }
 
@@ -150,6 +177,12 @@ header {
     color: #ff9b43a4;
     font-weight: bold;
     font-size: 80px;
+}
+
+.infos {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-control {
@@ -219,11 +252,6 @@ section {}
     font-size: 90px;
 }
 
-.des {
-    font-weight: 300;
-    letter-spacing: 5px;
-}
-
 .puce {
     display: none;
 }
@@ -231,7 +259,6 @@ section {}
 .slogent {
     text-align: center;
     font-size: 23px;
-    color: #383838;
 }
 
 .env {
@@ -271,18 +298,34 @@ section {}
     margin-top: 30px;
     margin-bottom: 30px;
     a {
-        font-size: 35px;
+        font-size: 25px;
         color: #ff9c43;
         margin: 10px;
     }
 }
 
 footer {
-    padding: 10px;
+    font-size: 23px;
+    padding-left: 200px;
     background: #399cf3;
 }
 
+span.des {
+    font-size: 44px;
+}
+
+.bos {
+    width: 80%;
+}
+
 @media (max-width: 800px) {
+    footer {
+        font-size: 19px;
+        padding-left: 20px;
+    }
+    .bos {
+        width: 100%;
+    }
     .rel-t {
         text-align: center;
         font-size: 60px;
@@ -296,9 +339,6 @@ footer {
     }
     .h1 {
         font-size: 25px !important;
-    }
-    .size80 {
-        font-size: 32px;
     }
     .puce {
         display: block;
@@ -343,6 +383,7 @@ footer {
         z-index: 55879;
         top: 6px;
         right: 6px;
+        flex-direction: column;
         position: fixed;
         display: flex;
         justify-content: center;
@@ -350,10 +391,19 @@ footer {
         width: 40px;
         height: 40px;
         padding: 5px;
-        background-color: #ff9b43a8;
-        color: #fff;
         font-size: 20px;
-        border: 1px solid;
+    }
+    .back {
+        transition: 0.5s;
+        background-color: #fff !important;
+    }
+    .puce div {
+        transition: 0.5s;
+        border-radius: 10px;
+        background-color: #ff9c43;
+        width: 100%;
+        height: 5px;
+        margin-bottom: 4px;
     }
     .fack {
         height: 50px;
