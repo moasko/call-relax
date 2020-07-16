@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="addron/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
 
 
@@ -19,19 +20,25 @@
     un coup de fil! - Vous soulager en vous rendant la vie plus facile, tel est notre tâche!" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="http://callnrelax.com/" />
+
+    <meta property="og:url" content="http://callnrelax.com/" />
+    <meta property="og:site_name" content="call'n'relax" />
     <meta property="og:locale" content="fr_FR" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="call'n'relax" />
+    <meta property="og:image" content="http://callnrelax.com/images/circle.png">
     <meta property="og:description" content="Un coup de main en
     un coup de fil! - Vous soulager en vous rendant la vie plus facile, tel est notre tâche!" />
-    <meta property="og:url" content="http://callnrelax.com/" />
-    <meta property="og:site_name" content="call'n'relax" />
-    <meta name="twitter:card" content="summary" />
 
+    <meta name="twitter:card" content="summary" />
     <link rel="icon" type="image/png" href="images/favicon.jpeg">
     <link rel="shortcut icon" href="images/favicon.jpeg" />
 
+    <meta name="copyright" content="call'n'relax">
+    <meta name="robots" content="index,follow" />
+
     <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9eb7cd15de.js" crossorigin="anonymous"></script>
 
 </head>
@@ -42,40 +49,42 @@
     <main>
         <!--------------HEADER------------->
         <header class="header" id="header" role="heading">
+            <div class="container">
+                <nav class="navigbar">
+                    <div class="logo">
+                        <img class="img-fluid" src="images/web-logo.png" alt="">
+                    </div>
+                    <div class="puce">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="navigation">
+                        <div class="fack"></div>
+                        <ul>
+                            <li><a class="navlink" href="">Acceuil</a></li>
+                            <li><a class="navlink" href="#relex">A propos</a></li>
+                            <li><a class="navlink" href="#services">Nos services</a></li>
+                            <li><a class="navlink" href="#contact">Contacts</a></li>
+                        </ul>
+                    </div>
+                </nav>
 
-            <nav class="navigbar">
-
-                <div class="logo">
-                    <img src="images/web-logo.png" alt="">
-                </div>
-                <div class="puce">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="navigation">
-                    <div class="fack"></div>
-                    <ul>
-                        <li><a class="navlink" href="">Acceuil</a></li>
-                        <li><a class="navlink" href="#relex">A propos</a></li>
-                        <li><a class="navlink" href="#services">Nos services</a></li>
-                        <li><a class="navlink" href="#contact">Contacts</a></li>
-                    </ul>
-                </div>
-            </nav>
+            </div>
 
 
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6 col-xs-12 col-lg-6 col-sm-12 d-flex align-items-center sc">
                         <div class="color-light bos">
-                            <h1 class="h1"><span class="des">Un coup de main en</span><br><strong class="size80">un coup de fil!</strong></h1>
-                            <p class="slogent">Vous soulager en vous rendant la vie plus facile, tel est notre tâche!</p>
+                            <h1 data-aos="zoom-out-up" class="h1"><span class="des">Un coup de main en</span><br><strong class="size80">un coup de fil!</strong></h1>
+                            <p data-aos="zoom-in-up" class="slogent">Vous soulager en vous rendant la vie plus facile, tel est notre tâche!</p>
                         </div>
 
                     </div>
                     <div class="clo col-md-6 col-lg-6 col-sm-12">
-                        <img class="img-fluid" src="images/ill1.png" alt="">
+                        <img data-aos="zoom-in" class="img-fluid rel-2" src="images/ill1.png" alt="">
+                        <img data-aos="zoom-in" class="img-fluid rel-1" src="images/ill2.png" alt="">
                     </div>
                 </div>
             </div>
@@ -85,12 +94,13 @@
             <div class="container">
                 <div class="row owa">
                     <div class="col-md-6 col-lg-6 col-sm-12">
-                        <img class="img-fluid" src="images/circle.png" alt="">
+                        <h1 class="font-weight-bolder display-1 rel-t text-or rel-1">call'n'relax?</h1>
+                        <img data-aos="zoom-in-down" class="img-fluid imgre" src="images/circle.png" alt="">
                     </div>
                     <div class="col-md-6 d-flex align-items-center">
                         <div class="texter-relex">
-                            <h1 class="font-weight-bolder display-1 rel-t text-or">call'n'relax?</h1>
-                            <p class="text-or">Nous vous offrons des services personnalisés dans vos besoins afin de garantir votre autonomie à domicile . Une approche professionnelle et humaine Nous intervenons 7j/7 week-end et jours fériés inclus .</p>
+                            <h1 class="font-weight-bolder display-1 rel-t text-or rel-2" data-aos="fade-right">call'n'relax?</h1>
+                            <p data-aos="zoom-in-down" class="text-o information">Nous vous offrons des services personnalisés dans vos besoins afin de garantir votre autonomie à domicile . Une approche professionnelle et humaine Nous intervenons 7j/7 week-end et jours fériés inclus .</p>
                         </div>
 
                     </div>
@@ -101,24 +111,24 @@
         <section class="services" id="services">
 
             <div class="col-12">
-                <h1 class="section-title">nos services</h1>
+                <h1 data-aos="zoom-out-up" class="section-title text-or">nos services</h1>
             </div>
 
             <div class="container">
                 <div class="tabs_vontroles d-flex">
                     <ul class="nav nav-tabs d-flex d-flex justify-content-center" role="tablist">
 
-                        <li role="presentation" class="tabs-btn active">
-                            <a href="#Section1" aria-controls="home" role="tab" data-toggle="tab"><img class="img-fluid" src="images/service_icons/room.png" alt="">
+                        <li data-aos="zoom-in-down" role="presentation" class="tabs-btn">
+                            <a href="#Section1" aria-controls="home" class="active show" role="tab" data-toggle="tab"><img class="img-fluid" src="images/service_icons/room.png" alt="">
                                 <h5>Aide à domicile</h5>
                             </a>
                         </li>
-                        <li role="presentation" class="tabs-btn">
+                        <li data-aos="zoom-in-down" role="presentation" class="tabs-btn">
                             <a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab"><img class="img-fluid" src="images/service_icons/shop.png" alt="">
                                 <h5>Acte de la vie quotidienne</h5>
                             </a>
                         </li>
-                        <li role="presentation" class="tabs-btn">
+                        <li data-aos="zoom-in-down" role="presentation" class="tabs-btn">
                             <a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab"><img class="img-fluid" src="images/service_icons/Groupe de masques 1.png" alt="">
                                 <h5>Actes essentiels</h5>
                             </a>
@@ -126,26 +136,27 @@
                     </ul>
                 </div>
 
+                <div class="container">
+                    <div class="row">
+                        <div class="tab-content tabs">
 
-                <div class="row">
-                    <div class="tab-content tabs">
-
-                        <div role="tabpanel" class="tab-pane  active show ab" id="Section1">
-                            <div class="row flx">
-                                <div class="col-md-6">
-                                    <img class="img-fluid service_img" src="images/vielle dame.png" alt="">
-                                </div>
-                                <div class="col-md-6 le">
-                                    <div class="box">
-                                        <div class="card bg-transparent">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Aide à domicile</h5>
-                                                <div class="checks">
-                                                    <div class="check-item"><img class="chex" src="images/check.png" alt=""> Personnes âgées</div>
-                                                    <div class="check-item"><img class="chex" src="images/check.png" alt=""> Personnes à mobilité réduite</div>
-                                                    <div class="check-item"><img class="chex" src="images/check.png" alt=""> Personne en situation d'handicap</div>
-                                                    <div class="col-md-5 margin-top">
-                                                        <a href="#" class="appel-btn">APPELER</a>
+                            <div role="tabpanel" class="tab-pane  active show ab" id="Section1">
+                                <div class="row flx">
+                                    <div data-aos="zoom-in-down" class="col-md-6">
+                                        <img class="img-fluid service_img" src="images/vielle dame.png" alt="">
+                                    </div>
+                                    <div data-aos="zoom-in-up" class="col-md-6 le">
+                                        <div class="box">
+                                            <div class="card bg-transparent">
+                                                <div class="card-body">
+                                                    <h5 class="card-title text-or">Aide à domicile</h5>
+                                                    <div class="checks">
+                                                        <div class="check-item"><img class="chex" src="images/check.png" alt=""> Personnes âgées</div>
+                                                        <div class="check-item"><img class="chex" src="images/check.png" alt=""> Personnes à mobilité réduite</div>
+                                                        <div class="check-item"><img class="chex" src="images/check.png" alt=""> Personne en situation d'handicap</div>
+                                                        <div class="col-md-5 margin-top">
+                                                            <a href="tel:0749153068" class="appel-btn">APPELER</a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -153,54 +164,54 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div role="tabpanel" class="tab-pane" id="Section2">
-                            <div class="row flx">
-                                <div class="col-md-6">
-                                    <img class="img-fluid service_img" src="images/vielle dame-1.png" alt="">
-                                </div>
-                                <div class="col-md-6 le">
-                                    <div class="box">
-                                        <div class="card bg-transparent">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Actes de la vie quotidienne</h5>
-                                                <div class="checks">
-                                                    <div class="check-item"><img class="chex" src="images/check.png" alt=""> Courses</div>
-                                                    <div class="check-item"><img class="chex" src="images/check.png" alt=""> Entretien des locaux</div>
-                                                    <div class="check-item"><img class="chex" src="images/check.png" alt=""> Accompagnement administratif</div>
-                                                    <div class="check-item"><img class="chex" src="images/check.png" alt=""> Aide à la préparation des repas</div>
-                                                    <div class="col-md margin-top">
-                                                        <a href="#" class="appel-btn">APPELER</a>
+                            <div role="tabpanel" class="tab-pane" id="Section2">
+                                <div class="row flx">
+                                    <div data-aos="flip-up" class="col-md-6">
+                                        <img class="img-fluid service_img" src="images/vielle dame-1.png" alt="">
+                                    </div>
+                                    <div data-aos="flip-down" class="col-md-6 le">
+                                        <div class="box">
+                                            <div class="card bg-transparent">
+                                                <div class="card-body">
+                                                    <h5 class="card-title text-or">Actes de la vie quotidienne</h5>
+                                                    <div class="checks">
+                                                        <div class="check-item"><img class="chex" src="images/check.png" alt=""> Courses</div>
+                                                        <div class="check-item"><img class="chex" src="images/check.png" alt=""> Entretien des locaux</div>
+                                                        <div class="check-item"><img class="chex" src="images/check.png" alt=""> Accompagnement administratif</div>
+                                                        <div class="check-item"><img class="chex" src="images/check.png" alt=""> Aide à la préparation des repas</div>
+                                                        <div class="col-md margin-top">
+                                                            <a href="tel:0749153068" class="appel-btn">APPELER</a>
+                                                        </div>
+
                                                     </div>
-
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div role="tabpanel" class="tab-pane" id="Section3">
-                            <div class="row flx">
-                                <div class="col-md-6">
-                                    <img class="img-fluid service_img" src="images/vielle dame-2.png" alt="">
-                                </div>
-                                <div class="col-md-6 le">
-                                    <div class="box">
-                                        <div class="card bg-transparent">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Actes essentiels</h5>
-                                                <div class="checks">
-                                                    <div class="check-item"><img class="chex" src="images/check.png" alt=""> Aide à la toilette</div>
-                                                    <div class="check-item"><img class="chex" src="images/check.png" alt=""> Aide au repas</div>
-                                                    <div class="check-item"><img class="chex" src="images/check.png" alt=""> Garde d enfants</div>
-                                                    <div class="check-item"><img class="chex" src="images/check.png" alt=""> Entretien des locaux publics / privés</div>
-                                                    <div class="check-item"><img class="chex" src="images/check.png" alt=""> Aide au repassage</div>
-                                                    <div class="check-item"><img class="chex" src="images/check.png" alt=""> Sortie d école</div>
-                                                    <div class="col-md-6 margin-top">
-                                                        <a href="#" class="appel-btn">APPELER</a>
+                            <div role="tabpanel" class="tab-pane" id="Section3">
+                                <div class="row flx">
+                                    <div class="col-md-6">
+                                        <img class="img-fluid service_img" src="images/vielle dame-2.png" alt="">
+                                    </div>
+                                    <div class="col-md-6 le">
+                                        <div class="box">
+                                            <div class="card bg-transparent">
+                                                <div class="card-body">
+                                                    <h5 class="card-title text-or">Actes essentiels</h5>
+                                                    <div class="checks">
+                                                        <div class="check-item"><img class="chex" src="images/check.png" alt=""> Aide à la toilette</div>
+                                                        <div class="check-item"><img class="chex" src="images/check.png" alt=""> Aide au repas</div>
+                                                        <div class="check-item"><img class="chex" src="images/check.png" alt=""> Garde d enfants</div>
+                                                        <div class="check-item"><img class="chex" src="images/check.png" alt=""> Entretien des locaux publics / privés</div>
+                                                        <div class="check-item"><img class="chex" src="images/check.png" alt=""> Aide au repassage</div>
+                                                        <div class="check-item"><img class="chex" src="images/check.png" alt=""> Sortie d école</div>
+                                                        <div class="col-md-6 margin-top">
+                                                            <a href="tel:0749153068" class="appel-btn">APPELER</a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -210,6 +221,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
 
 
@@ -220,14 +232,14 @@
         <!-----------contacte-------------------->
         <section class="contact" id="contact">
             <div class="col-12">
-                <div class="section-title">Contactez-nous</div>
+                <div class="section-title text-or">Contactez-nous</div>
             </div>
             <div class="container">
                 <form method="get" action="">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input placeholder="Email " id="my-input" class="form-control" type="text" name="">
+                                <input placeholder="Email" id="my-input" class="form-control" type="text" name="">
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -250,7 +262,13 @@
 
                 <div class="links text-center col">
                     <div class="infos">
-                        <a href="mailto:http://www.bonjour@callnrelax.com">bonjour@callnrelax.com</a> | <a href="#">+2250749153068</a>
+                        <div class="row">
+                            <a class="text-center" href="mailto:http://www.bonjour@callnrelax.com">bonjour@callnrelax.com</a>
+                            <div class="separator">|</div>
+                            <a class="texte-center" href="tel:0749153068">0749153068</a>
+
+                        </div>
+
                     </div>
                     <div class="social-group">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -264,51 +282,59 @@
         </section>
         <!--------------footer------------->
         <footer class="footer" id="footer">
-            <div class="mt-5 pt-5 pb-5 footer">
+            <div class="mt-5 pt-5 pb-5 footerr">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-5 col-xs-12 about-company">
-                            <h2>call'n'relax</h2>
-                            <p class="pr-5 text-white-50">
-                                1 Chemin de Bontems,<br> 31490 Leguevin,<br> France.
-                            </p>
+                    <div class="custom-contain">
+                        <div class="rowwer d-flex">
+                            <div class="col-lg-5  lio about-company">
+                                <h2 class="fronthow  text-light">call'n'relax</h2>
+                                <p class=" text-white-50 text-light">
+                                    1 Chemin de Bontems,<br> 31490 Leguevin,<br> France.
+                                </p>
 
-                        </div>
-                        <div class="col-lg-3 col-xs-12">
+                            </div>
+                            <div class="col-lg-3 lio">
+                                <h3 class="text-light">RESEAUX</h3>
+                                <ul class="m-0 p-0">
+                                    <li>
+                                        <a class="text-light" href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                                    </li>
+                                    <li><a class="text-light" href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                                    <li> <a class="text-light" href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                                </ul>
 
-                            <ul class="m-0 p-0">
-                                <li>
-                                    <a class="text-light" href="#"> <i class="fab fa-facebook-f"></i> facebook</a>
-                                </li>
-                                <li><a class="text-light" href="#"><i class="fab fa-twitter"></i> twetter</a></li>
-                                <li> <a class="text-light" href="#"><i class="fab fa-instagram"></i> instagram</a></li>
-                            </ul>
-
-                        </div>
-                        <div class="col-lg-4 col-xs-12 location">
-                            <ul class="m-0 p-0">
-                                <li><a class="text-light" href="#"> Acceuil</a></li>
-                                <li> <a class="text-light" href="#">A propos</a></li>
-                                <li><a class="text-light" href="#">Nos services</a></li>
-                                <li> <a class="text-light" href="#">Contacte</a></li>
-                            </ul>
+                            </div>
+                            <div class="col-lg-4  lio  location">
+                                <ul class="m-0 p-0">
+                                    <li><a class="text-light" href="#"> Acceuil</a></li>
+                                    <li> <a class="text-light" href="#">A propos</a></li>
+                                    <li><a class="text-light" href="#">Nos services</a></li>
+                                    <li> <a class="text-light" href="#">Contacts</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+
+
                     <div class="row mt-5">
-                        <div class="col copyright text-right">
-                            <p class=""><small class="text-white-50">© Copyright @ 2020 call'n'relax. Tout droits réservés</small></p>
+                        <div class="col txte-footer copyright ">
+                            <p class=""><small class="text-white-50 text-light ">© Copyright 2020 call'n'relax. Tout droits réservé</small></p>
+                            <small class="small text-white-50 text-light">Illustrations par @Stories</small>
+
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
     </main>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
